@@ -10718,8 +10718,6 @@ WORK
   background-size: cover
 }
 .absolute-form{
-	background:rgba(0,0,0,0.6);
-	background-size:cover;
     position: absolute;
     left: 0%;
 	bottom:0%;
@@ -11289,4 +11287,12 @@ height:30em;
   top: 50%;
   color: #fff;
   font-size: 20px
+}
+.sliding-overlay{
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
 }
