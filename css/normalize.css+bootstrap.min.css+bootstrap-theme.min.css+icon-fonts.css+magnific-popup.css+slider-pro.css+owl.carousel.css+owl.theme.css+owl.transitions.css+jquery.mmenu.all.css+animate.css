@@ -11296,3 +11296,7 @@ height:30em;
   bottom: 0;
   left: 0
 }
+
+.none-padding{
+  padding: 0
+}
