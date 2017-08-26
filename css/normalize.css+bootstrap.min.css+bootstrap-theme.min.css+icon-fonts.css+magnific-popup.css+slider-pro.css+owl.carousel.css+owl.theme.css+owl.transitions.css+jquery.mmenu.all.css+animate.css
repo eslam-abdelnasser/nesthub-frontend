@@ -10911,13 +10911,6 @@ WORK
     top: calc(-100px/2);
     left: calc(50% - 50px);
 }
-h3
-{
-	margin: 0;
-	padding: 0 0 20px;
-	color: #efed40;
-	text-align: center;
-}
 .loginBox p
 {
 	margin:0;
@@ -11058,15 +11051,6 @@ div.panel {
 	width:100%;
  
 }
-.fa-heart
-{
-	color:#FBB01F;
-	margin-top:5%; 
-	margin-left:35% ;
-	font-size:20px;
-}
-
-
 
 #quote-carousel {
     padding: 0 10px 30px 10px;
@@ -11115,9 +11099,6 @@ div.panel {
     border-color: #f33;
     opacity: 1;
     overflow: hidden;
-}
-.carousel-inner {
-    min-height: 300px;
 }
 .item blockquote {
     border-left: none;
@@ -11253,73 +11234,59 @@ height:30em;
 }
 
 /*end*/
-/*--tablet--*/
-@media screen and (min-width: 568px)
-and (max-width: 768px)
-{
-	.absolute-form{   
-width:   760px; 
-top: 10% !important;
-left:5%;
-transform: translateY(-40%);
-transform: translatex(-20%);
-text-align: left;
- max-width:80em;
-height:50em;
-background-size:cover;
-}
-.absolute-form h1{
-	font-size:25px;
-}
-.absolute-form .d p
-{
-	font-size:17px;
-}
-.absolute-form .book-header p
-{
-	font-size:16px;
-}
-.absolute-form .dropdown-toggle
-{
-	transform: translateY(-42%);
-	width:80px;
-	height:40px;
-	font-size:14px;
-}
-.absolute-form .btn-search
-{
-	width:140px;
-	height:50px;
-}
-.slide1{
- max-width:100em;
-height:50em;
-}
-.slide2{
- max-width:100em;
-height:50em;}
-.slide3{
- max-width:100em;
-height:50em;  
+/*--tablet--*
 
+/*abdoo edits*/
+
+.work-space{
+  padding: 15px
 }
-.do-service-container
-{
-	transform:translateX(-10%);
-	padding:3%;
-	margin-left:5%;
-	
+.work-space .space-title{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px
 }
-.do-sevice-section 
-{
-	width:140%;
+.work-space .space-title p{
+  margin: 0;
+}
+.flexed{
+  column-count: 3;
+  padding: 10px 0
+}
+.space-footer::before{
+  content: " ";
+  height: 1px;
+  background: #eee;
+  width: 350px;
+  display: block;
+  margin-left: -15px
+}
+.space-footer p a span{
+  padding: 10px;
+  color: #fc7f0c;
+  font-size: 20px
 }
 
-.foot h4 
-{
-	text-align:center;
+.item {
+    display: none;
+    position: relative;
+    -webkit-transition: 0.1s ease-in-out left;
+    -moz-transition: 0.1s ease-in-out left;
+    -o-transition: 0.1s ease-in-out left;
+    .transition(.6s ease-in-out left);
 }
-.foot  
-{
+
+.carousel-control.left,.carousel-control.right{
+  background: transparent!important;
+  top: 50%
 }
+
+.carousel-control span{
+  font-size: 20px;
+  color: #fff
+}
+
+.carousel-control{
+  top: 50%;
+  color: #fff;
+  font-size: 20px
 }
