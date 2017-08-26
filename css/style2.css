@@ -1,0 +1,105 @@
+
+.container
+{
+margin:0;
+	padding:0;	
+	display:inline;
+}
+h1{
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:5%;
+	left:3%;
+	transform:transelate(-50%,-50%);
+	
+}
+h1 span
+{
+	color:#093F9A;
+    background:#D9E8FF;
+	padding:8px 8px;
+	font-family:Arial ;
+	display:table-cell;
+	box-shadow: 0 2px 0 #FBBC33;
+	animation: animate .5s infinite;
+}
+.btn-facebook
+{
+	margin-top:6%;
+	width:85%;
+	height:30px;
+	margin-left:7%;
+	background-color:#30487B;
+	border:none;
+	color:#fff;
+	font-size:15;
+}
+.btn-Google
+{
+	margin-top:7%;
+	width:85%;
+	height:30px;
+	margin-left:7%;
+	background-color:#CA3523;
+	border:none;
+	color:#fff;
+	font-size:15;
+	margin-bottom:3%;
+}
+h2
+{
+	font-size:12;
+	color:#fff;
+	margin-left:10%;
+	margin-bottom:0%;
+	color:#D9E8FF
+}
+.main
+{
+	
+	box-sizing:border-box;
+	font-family:sans-serif;
+	width:300px;
+	height:600px;
+	margin: 20px auto;
+	margin-top:0%;
+	background-color:#D9E8FF;
+	margin-left:3%;
+	background:rgba(0,0,0,.6);
+	box-shadow:0 0 10px #D9E8FF;
+}
+.info
+{
+	width:94%;
+	padding:10px;
+	font-size:20px;
+	color:#093F9A;
+    background:#D9E8FF;
+	text-align:center;
+	font-weight:bold;
+}
+.form_box
+{
+	padding:20px;
+}
+.inputt
+{
+	width:100%;
+	padding:15px;
+	border:none;
+	margin-bottom:8px;
+   font-weight:bold;
+}
+.submit_btn
+{
+	width:100%;
+	padding:11px;
+	font-size:23;
+    border :none;
+	background-color:#FBBC33;
+	font-weight:bold;
+	color:#093F9A;
+	text-shadow:2px 2px 2px #000;
+	cursor: pointer;
+	}
