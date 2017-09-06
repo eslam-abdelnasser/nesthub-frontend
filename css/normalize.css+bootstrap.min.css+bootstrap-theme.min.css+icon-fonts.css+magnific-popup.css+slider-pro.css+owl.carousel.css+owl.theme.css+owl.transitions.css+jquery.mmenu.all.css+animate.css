@@ -9478,7 +9478,9 @@ SLIDER
 .do-portfolio-square .do-work-item {
   height: 280px;
   overflow: hidden;
+  width:100;
   width: calc(100% / 3);
+  
 }
 
 .do-contactmap-section .do-home-contact-form {
@@ -9488,7 +9490,10 @@ SLIDER
   top: 0;
   width: calc(970px / 2);
 }
-
+.do-service-container-inner
+{
+	width:100%;
+}
 }
 
 
@@ -9511,10 +9516,13 @@ SLIDER
 .do-work-item {
   height: 200px;
   overflow: hidden;
-  width: 33.333%;
+  width: 100%;
 }
 
-
+.do-sevice-section .do-service-container
+{
+	width:85%;
+}
 /************
 CUSTOM SECTION WITH IMAGE
 ************/
@@ -10017,7 +10025,7 @@ SERVICE
   margin-right: 40px;
   margin-bottom: 1px;
   position: relative;
-  width: 85%;
+  width: 90%;
 }
 
 
@@ -10593,6 +10601,10 @@ SLIDER
   top: 170px !important;
   width: 13% !important;
 }
+.absolute-form  .heed h1{
+	  color:#FBB0F1;
+	  margin-top:80%;
+	}
 
 /**********
 SIDE MENU
@@ -10620,7 +10632,13 @@ WORK
   height: auto;
   overflow: hidden;
   position: relative;
-}
+
+  }
+  .do-sevice-section .do-service-container 
+  {
+	  width:80%;
+  }
+ 
 
 /**************************************************************************
                                 # PORTFOLIO 2,3,4, WITH SPACE#
@@ -10685,8 +10703,9 @@ WORK
 .do-portfolio-square .do-work-item {
   height: 220px;
   overflow: hidden;
-  width: 50%;
+  width: 100%;
 }
+
 }
 
 /*Other Edits*/
@@ -10884,8 +10903,79 @@ WORK
 .testi-carousel{
   padding: 0 20%
 }
-/*-- Hager update---*/
-	/*-- Hager update---*/
+@media only screen and (min-width: 991px) and (max-width: 1199px)
+{
+	.absolute-form  .heed h1{
+	  margin-top:15%;
+	 margin-bottom:0%;
+	}
+	.absolute-form  .d p{
+	   margin-top:-10%;
+       margin-left:0%;
+	  }
+	   .absolute-form  .book-header p{
+       margin-left:0px;
+	  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.absolute-form  .heed h1{
+	  margin-top:20%;
+	 margin-bottom:0%;
+	}
+	.absolute-form  .d p{
+	   margin-top:-10%;
+       margin-left:0%;
+	  }
+	   .absolute-form  .book-header p{
+       margin-left:0%;
+	  }
+	   .absolute-form .dropdown-toggle
+	   {
+		     margin-left:4%;
+			 margin-top:-5%;
+			 width:20%;
+	   }
+	    .absolute-form .btn-search
+		{
+			width:28%;
+		}
+		.absolute-form .caret
+		{
+			float:right;
+			margin-top:20%;
+		}
+	  
+}
+@media only screen and (min-width: 480px) and (max-width: 767px)
+{
+	.absolute-form  .heed h1{
+	  margin-top:20%;
+	 margin-bottom:0%;
+	}
+	.absolute-form  .d p{
+	   margin-top:-10%;
+       margin-left:0%;
+	  }
+	  .absolute-form  .book-header p{
+       margin-left:0%;
+	  }
+	   .absolute-form .dropdown-toggle
+	   {
+		     margin-left:4%;
+			 margin-top:-7%;
+			 width:20%;
+	   }
+	    .absolute-form .btn-search
+		{
+			width:28%;
+		}
+		.absolute-form .caret
+		{
+			float:right;
+			margin-top:20%;
+		}
+}
+
 /*-- sign in --*/ 
   .loginBox
 {
