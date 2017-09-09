@@ -19,7 +19,7 @@
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <!-- DEFAULT AND BOOTSTRAP STYLESHEET -->
     <link rel="stylesheet" href="css/normalize.css%2bbootstrap.min.css%2bbootstrap-theme.min.css%2bicon-fonts.css%2bmagnific-popup.css%2bslider-pro.css%2bowl.carousel.css%2bowl.theme.css%2bowl.transitions.css%2bjquery.mmenu.all.css%2banimate.css"/>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
     <!-- <link rel="stylesheet" href="css/style2.css"> -->
     <!-- FONT ICONS -->
 <!-- <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -44,13 +44,20 @@
     <!-- MAIN STYLESHEETS -->
     
     <link href="css/stylek.css" rel="stylesheet" type="text/css"/>
-
+	<link href="css/ratings-widget.css" rel="stylesheet" type="text/css"/>
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
     <!-- MODERNIZER -->
     <script src="js/modernizr-2.8.3.min.js.pagespeed.jm.-eLSiFDS5V.js"></script>
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+
+
 	<!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
@@ -58,9 +65,14 @@
         <script src="js/nwmatcher.js"></script>
         <script src="js/IE9.js"></script>		
 	<![endif]-->
+	<script src="js/new.js"></script>
+	<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/rating.js"></script>
 </head>
 
 <body class="do-homepage-one">
+
     <!-- PRELOADER -->
     <div class="preloader">
         <div class="do-loader">&nbsp;</div>
@@ -183,15 +195,7 @@
                 <!-- navbar-collapse start-->
                 <div id="nav-menu" class="navbar-collapse do-menu-wrapper collapse" role="navigation">
                     <ul class="nav navbar-nav do-menus">
-					<li class="location1" ><a href="index-2.html">for</a>
-					<div class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">Cairo   </a>
-                    <ul class="dropdown-menu">
-                      <li><a >Cairo</a></li>
-                      <li><a >Giza</a></li>
-                    </ul>
-                  </div>
-					</li>
+					
                         <li >
                             <a href="index-2.html">Home</a>
                             <ul class="sub-menu">
@@ -208,34 +212,6 @@
                         </li>
                         <li>
                             <a href="about_us.html">About us</a>
-                        </li>
-                        <li>
-                            <a href="blog_creative.html">Blog</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="blog_creative.html">Blog Creative</a>
-                                </li>
-                                <li>
-                                    <a href="blog_masonry.html">Blog Reguler</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li>
-                                        <a href="blog_single.html">Blog Single</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog_single_fluid.html">Blog Single - Fullwidth</a>
-                                    </li>
-                                <li>
-                                    <a href="portfolio-single-one.html">portfolio single 1</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-single-two.html">portfolio Single 2</a>
-                                </li>
-                            </ul>
                         </li>
                         <li>
                             <a href="#">Portfolio</a>
@@ -261,53 +237,108 @@
                             <a href="contact_us.html">Contact</a>
                         </li>
 						<!--login-->
-						<li>
-                        	<a onclick="document.getElementById('modal-wrapper').style.display='block'" > SignIn</a>
-                            <div id="modal-wrapper" class="modal">
-                                <form class="modal-content animate">
-                                    <div class="loginBox">
-			                             <img src="images/user.png" class="user">
-			                             <h3>Log In Here</h3>
-			                    <form>
-				                <p class="first">Email</p>
-				                <input type="text" name="" placeholder="Enter Email"required>
-				                <p>Password</p>
-				               <input type="Password" name="" placeholder="••••••"required>
-				               <input type="submit" name="" value="Sign In">
-				               <a href="#">Forget Password</a>
-			                   </form>
-							   </form>
-	                        	</div>
+
+                        <div class="sign_in"><!--start of sing-up-->
+                            <button type="button" class="btn do-btn-round-outline" data-toggle="modal" data-target="#myModal">Sign up</button>
+                            <div class="modal fade myModal" id="myModal" role="dialog"><!--sstart of modal-->
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <div class="login-head">
+                                      <img src="images/guy2.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-group">
+                                        <div class="social-sign">
+                                            <ul>
+                                                <li class="fb-sign"><a href=""><i class="fa fa-facebook"></i> Sign up with facebook</a></li>
+                                                <li class="google-sign"><a href=""><i class="fa fa-google"></i> Sign up with google</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="sign-up-heading">
+                                            <h4 class="text-center">Login Here</h4>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="fristname">Frist name</label>
+                                            <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="lastname">Last name</label>
+                                            <input type="text" class="form-control" id="Lastname" placeholder="Last Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>                                        
+                                        <div>
+                                            <button type="submit" class="btn do-btn-round-outline">Sign up</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
                             </div>
-                       </li>
-					   <!--signup-->
-					   <li>
-                        	<a onclick="document.getElementById('modal-wrapper2').style.display='block'" > SignUp</a>
-                            <div id="modal-wrapper2" class="modal">
-                                <form class="modal-content animate">
-                                    <div class="RegisterBox">
-	                                         <button class="btn-facebook"><i class="fa fa-facebook"></i> | Connect with Facebook</button>
-	                                         <button class="btn-google"><i class="fa fa-google    "></i>     | Connect with Google</button>
-											
-			                             <h3>Or sign up using the Form below.</h3>
-			                    <form>
-				                <p class="first">First Name</p>
-				                  <input type="text" name="" placeholder="First Name"required>
-								<p class="first">Last Name</p>
-				                  <input type="text" name="" placeholder="Last Name"required>
-								<p class="first">Email</p>
-				                  <input type="text" name="" placeholder="Enter Email"required>
-				                <p>Password</p>
-				                  <input type="password" name="" placeholder="••••••" required>
-								<p>Confirm Password</p>
-				                  <input type="password" name="" placeholder="••••••"required>
-				                <input type="submit" name="" value="Sign Up" href="index.html">       
-			                   </form>
-							   </form>
-	                        	</div>
+                        </div><!--end of modal-->
+                    </div><!--end of sing-up-->
+                        
+                        <!--sign up-->
+                        <div class="sign_in"><!--start of sing-up-->
+                            <button type="button" class="btn do-btn-round-outline" data-toggle="modal" data-target="#myModal1">Sign in</button>
+                            <div class="modal fade mymodal" id="myModal1" role="dialog"><!--sstart of modal-->
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <div class="login-head">
+                                      <img src="images/guy2.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-group">
+                                        <div class="sign-up-heading">
+                                            <h4 class="text-center">Login Here</h4>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div>
+                                            <button type="submit" class="btn do-btn-round-outline">Login</button>
+                                        </div>
+                                        <div class="forgot">
+                                            <a href="" class="btn" style="text-transform:uppercase">Forget password</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
                             </div>
-                       </li>
-                    </ul>
+                        </div><!--end of modal-->
+                    </div><!--end of sing-up-->
                 </div>
                 <!-- navbar-collapse end-->
 
@@ -344,26 +375,14 @@
                  <div class="heed">
 				<h1>Welcome to NEST HUB <h1>
 				</div>
-				<div class="d"><p> The Home Your StartUp Deserve !! All The Coolest OFFICE For StartUp And Small business </p></div>
-                <div class="book-header">
-				 <p>Your Location :</p>
-				 </div>
-				 <div class="dropdown col-md-6 fav-down">
-                  <div class="dropdown">
-                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Cairo  <span class="caret"></span></a>
-					
-                    <ul class="dropdown-menu">
-                      <li><a >Cairo</a></li>
-                      <li><a >Giza</a></li>
-                    </ul>
-                  </div>
-                </div>
+				<div class="d"><p> The Home Your StartUp Deserve !! All The Coolest OFFICE For StartUp And Small business  </p>
+				</div>
 				<!-- second -->
 				<div class="book-header">
-				<p> No. Of Desks :</p>
+				<p> I Need :</p>
 				 </div>
 				 <div class="dropdown col-md-6 fav-down">
-                    <a class="btn btn-primary dropdown-toggle" onclick="myFunction()" data-toggle="dropdown">Any<span class="caret"></span></a>
+                    <a class="btn btn-primary dropdown-toggle" onclick="myFunction()" data-toggle="dropdown">Desk<span class="caret"></span></a>
                     <div class="dropdown-menu">
                       
 					  <ul class="flex-drop">
@@ -391,13 +410,28 @@
                         </ul>
                     </div>
                 </div>
-				  <div class="our-class-search">
+				<!--end-->
+				<!--second-->
+                <div class="book-header">
+				 <p>Location :</p>
+				 </div>
+				 <div class="dropdown col-md-6 fav-down">
+                  <div class="dropdown">
+                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Cairo  <span class="caret"></span></a>
+					
+                    <ul class="dropdown-menu">
+                      <li><a >Cairo</a></li>
+                      <li><a >Giza</a></li>
+                    </ul>
+                  </div>
+                </div>
+				<!-- end-->
+				<div class="our-class-search">
                     <button class="btn-search" href="#"><i class="fa fa-search"></i> Find Office</button>
 					<a  href="#">or Call 122233333</a>
                 </div>
 				</div>
-			
-				<!--end-->
+				
                 
     </section>
     <!-- do Main Slider End -->
@@ -485,23 +519,22 @@
 
                       <!-- Nav tabs -->
                       <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">STARTUPS</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Freelancer</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">BIGGER BUSINESSES</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">AGENCIES</a></li>
                       </ul>
-
                       <!-- Tab panes -->
                       <div class="tab-content">
                         
                         <div role="tabpanel" class="tab-pane active" id="home">
                             <div class="tab-disc">
-                                <h3>Lorem ipsum dolor sit amet, </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h3>STARTUPS</h3>
+                                <p>Innovate and fuel your growth in space tailored for startups like yours. With features that go way beyond what you would get with a traditional office, expect accelerator support, a startup community and plenty of networking opportunities.</p>
+
                             </div>
                             <div class="col-md-12 none-padding"><!--col12-->
-                                <div class="col-md-4 boxed">
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed">
                                     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -513,15 +546,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -535,7 +568,7 @@
                                         <span class="sr-only">Next</span>
                                           </a>
                                     </div>
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -557,9 +590,9 @@
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                  
+                                    </div>  <!--end of work-space col-ms-4-->                  
                                 </div><!--col6-->
-                                <div class="col-md-4 boxed"><!--start of col-->
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
                                     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -571,15 +604,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -594,7 +627,7 @@
                                           </a>
                                     </div>  
 
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Accelerator London</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -616,10 +649,10 @@
                                         <div class="space-footer">
                                             <p class="text-center"> <a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                    
+                                    </div>  <!--end of work-space col-ms-4-->                    
                                 </div><!--end of col-->
 
-                                <div class="col-md-4 boxed"><!--start of col-->
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
                                     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -631,15 +664,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No1.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -654,7 +687,7 @@
                                           </a>
                                     </div>  
 
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Accelerator London</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -676,19 +709,20 @@
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                    
+                                    </div>  <!--end of work-space col-ms-4-->                    
                                 </div><!--end of col-->  
                             </div><!--end col12--> 
 
                         </div>
+						<!-- second tab-->
                         <div role="tabpanel" class="tab-pane" id="profile">
                             <div class="tab-disc">
-                                <h3>Lorem ipsum dolor sit amet, </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h3>Freelancer </h3>
+                                <p>Do your best work in a creative office space surrounded by inspiring people. We know you need something that suits your personal brand as well as your budget. Here are some fantastic spaces created with freelancers like you in mind.</p>
+
                             </div>
                             <div class="col-md-12 none-padding"><!--col12-->
-                                <div class="col-md-4 boxed">
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed">
                                     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -700,15 +734,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -722,7 +756,7 @@
                                         <span class="sr-only">Next</span>
                                           </a>
                                     </div>
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -741,12 +775,12 @@
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
-                                        <div class="space-footer">
+                                       <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                  
+                                    </div>  <!--end of work-space col-ms-4-->                  
                                 </div><!--col6-->
-                                <div class="col-md-4 boxed"><!--start of col-->
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
                                     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -758,15 +792,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -781,7 +815,7 @@
                                           </a>
                                     </div>  
 
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Accelerator London</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -803,10 +837,10 @@
                                         <div class="space-footer">
                                             <p class="text-center"> <a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                    
+                                    </div>  <!--end of work-space col-ms-4-->                    
                                 </div><!--end of col-->
 
-                                <div class="col-md-4 boxed"><!--start of col-->
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
                                     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -818,15 +852,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/x2.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -841,7 +875,7 @@
                                           </a>
                                     </div>  
 
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Accelerator London</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -863,19 +897,20 @@
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                    
+                                    </div>  <!--end of work-space col-ms-4-->                    
                                 </div><!--end of col-->  
                             </div><!--end col12-->
 
                         </div>
+						<!-- Third tab-->
                         <div role="tabpanel" class="tab-pane" id="messages">
                             <div class="tab-disc">
-                                <h3>Lorem ipsum dolor sit amet, </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h3>BIGGER BUSINESSES </h3>
+                                <p>You're looking for an office that you and your team will thrive in. Whether you're after a private office or fixed desks, welcome to the most exciting selection of space London has to offer. These are some of our favourites right now.</p>
+
                             </div>
                             <div class="col-md-12 none-padding"><!--col12-->
-                                <div class="col-md-4 boxed">
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed">
                                     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -887,15 +922,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -909,7 +944,7 @@
                                         <span class="sr-only">Next</span>
                                           </a>
                                     </div>
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -928,12 +963,12 @@
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
-                                        <div class="space-footer">
+                                       <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                  
+                                    </div>  <!--end of work-space col-ms-4-->                  
                                 </div><!--col6-->
-                                <div class="col-md-4 boxed"><!--start of col-->
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
                                     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -945,15 +980,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -968,7 +1003,7 @@
                                           </a>
                                     </div>  
 
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Accelerator London</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -990,10 +1025,10 @@
                                         <div class="space-footer">
                                             <p class="text-center"> <a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                    
+                                    </div>  <!--end of work-space col-ms-4-->                    
                                 </div><!--end of col-->
 
-                                <div class="col-md-4 boxed"><!--start of col-->
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
                                     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -1005,15 +1040,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No2.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -1028,7 +1063,7 @@
                                           </a>
                                     </div>  
 
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Accelerator London</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -1050,18 +1085,19 @@
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                    
+                                    </div>  <!--end of work-space col-ms-4-->                    
                                 </div><!--end of col-->  
                             </div><!--end col12-->
                         </div>
+						<!-- fourth tab-->
                         <div role="tabpanel" class="tab-pane" id="settings">
                             <div class="tab-disc">
-                                <h3>Lorem ipsum dolor sit amet, </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h3>AGENCIES</h3>
+                                <p>Amaze your clients with an office space that reflects your image, in the right location, with the right neighbours. You'll fall in love with these creative spaces, hand picked for businesses like yours.</p>
+
                             </div>
                             <div class="col-md-12 none-padding"><!--col12-->
-                                <div class="col-md-4 boxed">
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed">
                                     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -1073,15 +1109,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -1095,7 +1131,7 @@
                                         <span class="sr-only">Next</span>
                                           </a>
                                     </div>
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -1117,9 +1153,9 @@
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                  
+                                    </div>  <!--end of work-space col-ms-4-->                  
                                 </div><!--col6-->
-                                <div class="col-md-4 boxed"><!--start of col-->
+                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
                                     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -1131,15 +1167,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -1154,7 +1190,7 @@
                                           </a>
                                     </div>  
 
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Accelerator London</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -1175,11 +1211,12 @@
                                         </div><!--end of panel-body-->
                                         <div class="space-footer">
                                             <p class="text-center"> <a href=""><span class="fa fa-heart">Shortlist</span></a></p>
-                                        </div>
-                                    </div>  <!--end of work-space-->                    
+                                        </div>  <!--end of work-space col-ms-4-->                    
                                 </div><!--end of col-->
 
-                                <div class="col-md-4 boxed"><!--start of col-->
+                                 
+                            </div><!--end col12-->
+                            <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
                                     <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -1191,15 +1228,15 @@
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
 
                                         <div class="item">
-                                          <img src="images/blog-img-1.jpg" alt="">
+                                          <img src="images/No3.jpg" alt="">
                                         </div>
                                       </div>
 
@@ -1214,7 +1251,7 @@
                                           </a>
                                     </div>  
 
-                                    <div class="work-space"><!--stat of work-space-->
+                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
                                             <h3>Accelerator London</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
@@ -1233,12 +1270,11 @@
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
-                                        <div class="space-footer">
+                                       <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space-->                    
-                                </div><!--end of col-->  
-                            </div><!--end col12-->
+                                </div>  <!--end of work-space col-ms-4-->                    
+                            </div><!--end of col4--> 
 
                         </div>
                     </div>
@@ -1259,12 +1295,14 @@
 
                
  <div class="collection-block dark-bottom-border">
+ 									 <h1> Styling Features</h1>
+
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-8 col-xs-12">
                                      <!--collection-col--> 
                                     <div class="collection-col women" data-animate="fadeInUp" data-delay="300">
-                                        <img src="http://placehold.it/770x230" alt="image description">
+                                        <img src="images/hd2.jpg" alt="image description">
                                         <div class="collection-over">
                                             <div class="frame">
                                                 <div class="box">
@@ -1278,7 +1316,7 @@
                                         <div class="col-sm-6 col-xs-12" data-animate="fadeInUp" data-delay="300">
                                              <!--collection-col--> 
                                             <div class="collection-col">
-                                                <img src="http://placehold.it/370x231" alt="image description">
+                                                <img src="images/hd1.jpg" alt="image description">
                                                 <div class="collection-over add">
                                                     <div class="frame">
                                                         <div class="box">
@@ -1292,7 +1330,7 @@
                                         <div class="col-sm-6 col-xs-12" data-animate="fadeInUp" data-delay="300">
                                              <!--collection-col--> 
                                             <div class="collection-col">
-                                                <img src="http://placehold.it/370x231" alt="image description">
+                                                <img src="images/hd3.jpg" alt="image description">
                                                 <div class="collection-over add">
                                                     <div class="frame">
                                                         <div class="box">
@@ -1308,7 +1346,7 @@
                                 <div class="col-sm-4 col-xs-12" data-animate="fadeInUp" data-delay="300">
                                      <!--collection-col--> 
                                     <div class="collection-col">
-                                        <img src="http://placehold.it/370x490" alt="image description">
+                                        <img src="images/hd4.jpg" alt="image description" style="height: 490px">
                                         <div class="collection-over add2">
                                             <div class="frame">
                                                 <div class="box">
@@ -1330,16 +1368,16 @@
         </div>
     </section>
     <!-- FEATURE SECTION END -->
-    <!--================================
+   <!--================================
         TESTIMONIAL SECTION
     =================================-->
     <section class="do-testimonial-section" data-stellar-background-ratio="0.5">
     
-        <div class="container">
-            <div class="row">
-		  <!-- SECTION HEADING -->
+ <div class="container">
+        <div class="row">
+		 <!-- SECTION HEADING -->
                 <div class="do-section-heading do-section-heading-light">
-                    <h1>CLIENT SAYS</h1>
+                    <h3>CLIENT SAYS</h3>
                 </div>
                 <!-- SECTION HEADING END -->
                     <div class="col-md-12" data-wow-delay="0.2s">
@@ -1401,11 +1439,12 @@
                         </div>
                     </div>
                 </div>
-        </div>
+</div>
 
     </section>
 
 
+    <!--end-->
     <!--================================
         BLOG SECTION
     =================================-->
@@ -1414,8 +1453,8 @@
             <div class="row">
                 <!-- SECTION HEADING -->
                 <div class="do-section-heading">
-                    <h1>FROM Q&A</h1>
-                    <p class="do-section-subheading">Latest Question And Answers</p>
+                    <h1>Latest Co-working Spaces </h1>
+                    <p class="do-section-subheading">The Most New Co-working Spaces  </p>
                 </div>
                 <!-- SECTION HEADING END -->
 
@@ -1427,18 +1466,62 @@
                     <div class="do-blog-masonry-items col-md-4 col-sm-4 col-xs-12">
                         <div class="do-blog-item-wrapper appear fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                             <div class="do-blog-img-wrapper">
-                                <img src="images/xblog-mas-img-1.jpg.pagespeed.ic.VRy50RVE-T.jpg" alt="ENDLESS ROAD STARTS">
+                                <img src="images/No1.jpg" alt="ENDLESS ROAD STARTS">
                                 <div class="do-blog-post-date">
                                     <p>12 <span>DEC</span></p>
                                 </div>
                             </div>
-                            <div class="do-blo-title-excerpt">
-                                <h3>
-                                    <a href="blog_single.html">ENDLESS ROAD STARTS</a>
-                                </h3>
-                                <p>No one rejects, dislikes, or avoids pleasure those who do not know a puIse</p>
+                            <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                            <h3>Shared Office</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div>                                           
+                                        
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Private Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                            </ul>
+                                        </div><!--end of panel-body-->
+										 <h4>Rating</h4>
+							   <div class="star-rating">
+							  
+									<input id="star-5" type="radio" name="rating" value="star-5">
+									<label for="star-5" title="5 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-4" type="radio" name="rating" value="star-4">
+									<label for="star-4" title="4 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-3" type="radio" name="rating" value="star-3">
+									<label for="star-3" title="3 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-2" type="radio" name="rating" value="star-2">
+									<label for="star-2" title="2 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-1" type="radio" name="rating" value="star-1">
+									<label for="star-1" title="1 star">
+									<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+		                    </div>
+						    </div>
+
+                              <!--end of work-space col-ms-4-->  
+								
+							 
+								 <!--end-->
                             </div>
-                        </div>
                     </div>
                     <!-- BLOG ITEMS END -->
 
@@ -1446,18 +1529,56 @@
                     <div class="do-blog-masonry-items col-md-4 col-sm-4 col-xs-12">
                         <div class="do-blog-item-wrapper appear fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                             <div class="do-blog-img-wrapper">
-                                <img src="images/xblog-mas-img-2.jpg.pagespeed.ic.j9ZRZ8ocar.jpg" alt="ENDLESS ROAD STARTS">
+                                <img src="images/No1.jpg" alt="ENDLESS ROAD STARTS">
                                 <div class="do-blog-post-date">
                                     <p>12 <span>DEC</span></p>
                                 </div>
                             </div>
-                            <div class="do-blo-title-excerpt">
-                                <h3>
-                                    <a href="blog_single.html">ENDLESS ROAD STARTS</a>
-                                </h3>
-                                <p>No one rejects, dislikes, or avoids pleasure those who do not know a puIse</p>
+                               <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                            <h3>Shared Office</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div> 
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Private Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                            </ul>
+                                        </div><!--end of panel-body-->
+										<h4>Rating</h4>
+                                        <div class="star-rating">
+									<input id="star-5" type="radio" name="rating" value="star-5">
+									<label for="star-5" title="5 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-4" type="radio" name="rating" value="star-4">
+									<label for="star-4" title="4 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-3" type="radio" name="rating" value="star-3">
+									<label for="star-3" title="3 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-2" type="radio" name="rating" value="star-2">
+									<label for="star-2" title="2 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-1" type="radio" name="rating" value="star-1">
+									<label for="star-1" title="1 star">
+									<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+		                    </div>
+                                    </div>  <!--end of work-space col-ms-4-->         
+								
                             </div>
-                        </div>
                     </div>
                     <!-- BLOG ITEMS END -->
 
@@ -1465,21 +1586,62 @@
                     <div class="do-blog-masonry-items col-md-4 col-sm-4 col-xs-12">
                         <div class="do-blog-item-wrapper appear fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="do-blog-img-wrapper">
-                                <img src="images/xblog-mas-img-3.jpg.pagespeed.ic.j5I7K55tAQ.jpg" alt="ENDLESS ROAD STARTS">
+                                <img src="images/No1.jpg" alt="ENDLESS ROAD STARTS">
                                 <div class="do-blog-post-date">
                                     <p>12 <span>DEC</span></p>
                                 </div>
                             </div>
-                            <div class="do-blo-title-excerpt">
-                                <h3>
-                                    <a href="blog_single.html">ENDLESS ROAD STARTS</a>
-                                </h3>
-                                <p>No one rejects, dislikes, or avoids pleasure those who do not know a puIse</p>
+                              <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                            <h3>Co-working Space</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div> 
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Private Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                         	 </ul>
+											</div><!--end of panel-body-->
+
+										 <h4>Rating</h4>
+                                       <div class="star-rating">
+									<input id="star-5" type="radio" name="rating" value="star-5">
+									<label for="star-5" title="5 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-4" type="radio" name="rating" value="star-4">
+									<label for="star-4" title="4 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-3" type="radio" name="rating" value="star-3">
+									<label for="star-3" title="3 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-2" type="radio" name="rating" value="star-2">
+									<label for="star-2" title="2 stars">
+											<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+									<input id="star-1" type="radio" name="rating" value="star-1">
+									<label for="star-1" title="1 star">
+									<i class="active fa fa-star" aria-hidden="true"></i>
+									</label>
+		                    </div>
+
+                                    </div>  <!--end of work-space col-ms-4-->        
+								
+								 
                             </div>
                         </div>
                     </div>
                     <!-- BLOG ITEMS END -->
-                </div>
                 <!-- BLOG WRAPPER END -->
 
                 <div class="do-more-blog-post-btn">
@@ -1489,8 +1651,6 @@
         </div>
     </section>
     <!-- BLOG SECTION END -->
-
-
   <!--================================
         VIDEO SECTION
     =================================-->
@@ -1681,6 +1841,8 @@ $('#myTabs a').click(function (e) {
 
     <!-- CUSTOM SCRIPTS -->    
     <script src="js/main.js.pagespeed.ce.9-Pc5_Mato.js"></script>
+  
+
               					
 </body>
 
