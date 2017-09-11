@@ -5733,7 +5733,6 @@ DROPDOWN MENU
 .do-sevice-section .do-service-container:nth-child(3) .do-front-part{
     background-color:#294666;
 }
-
 .do-sevice-section .do-service-container:nth-child(4) .do-front-part{
     background-color: #474747;
 }
@@ -9521,7 +9520,7 @@ SLIDER
 
 .do-sevice-section .do-service-container
 {
-	width:85%;
+	width:75%;
 }
 /************
 CUSTOM SECTION WITH IMAGE
@@ -11286,3 +11285,9 @@ overflow-x: hidden;
 .fb-sign a:hover,.google-sign a:hover{
   color: #fff!important
 }
+.absolute-form .our-class-search .phone  p
+	{
+		margin-left:15%;
+		color:#fff;
+		font-size:18px;
+	}
