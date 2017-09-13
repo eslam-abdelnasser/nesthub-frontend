@@ -5766,10 +5766,6 @@ DROPDOWN MENU
 /** * * * * * * * * * * * * * * * * * * * * * * * * * * 
                         CUSTOM SECTION
 * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.do-custom-section{
-    padding-bottom: 0;
-    
-}
 
 .do-custom-section .do-section-heading{
     margin-bottom: 70px;
@@ -10703,7 +10699,7 @@ SLIDER
 }
 .absolute-form .dropdown-menu
 {
-	background: rgba(0,0,0,.6);
+	background: rgba(0,0,0,.9);
 	width: 40%;
   border-radius: 0!important
 	
@@ -10827,6 +10823,10 @@ SLIDER
     text-align: center;
     -webkit-transition: all .45s;
     transition: all .45s;
+}
+
+.dropdown-menu .flex-drop li{
+  margin-bottom: 5px
 }
 
 .item {
@@ -11176,7 +11176,7 @@ overflow-x: hidden;
 }
 
 .nav-tabs{
-  background-color:#294660;
+  background-color: rgba(41,70,102,0.8);
 }
 
 .nav-tabs li a{
@@ -11254,10 +11254,37 @@ overflow-x: hidden;
 }
 
 .do-custom-section .nav-tabs li.active{
-  border: 2px solid #FBB01F;
   color: #294660!important
 }
-.do-custom-section .nav-tabs li a:hover{
-  background: transparent;
-  border-color: transparent;
+.do-custom-section .nav-tabs li a{
+  -webkit-transition: all .45s;
+  -moz-transition: all .45s;
+  -o-transition: all .45s;
+  transition: all .45s;
+  border: none!important
 }
+
+.do-custom-section .nav-tabs li a:hover,
+.do-custom-section .nav-tabs li a:active,
+.do-custom-section .nav-tabs li a:focus,
+.do-custom-section .nav-tabs li a:visited{
+  background: #FBB01F!important;
+  border-color: transparent;
+  color: #294660!important;
+}
+
+.forgot a{
+  -webkit-transition: all .45s;
+  -moz-transition: all .45s;
+  -o-transition: all .45s;
+  transition: all .45s;
+}
+.forgot a:hover{
+  color: #FBB01F;
+  border: none!important;
+}
+.flex-margin{
+  margin-left: 15px
+}
+.tab-content .tab-disc{
+  margin: 0 15px;
