@@ -9,7 +9,7 @@
     <title>NestHub</title>
 
     <!-- FAVICON AND APPLE TOUCHSCREEN ICONS -->
-    <link rel="shortcut icon" href="images/logo1.jpg">
+    <link rel="shortcut icon" href="images/title-logo.png">
     <link rel="apple-touch-icon" href="https://codecanyon.net/user/redqteam/portfolio?ref=redqteam">
 
     <!-- ******************************
@@ -17,10 +17,14 @@
     *********************************** -->
         <link rel="stylesheet" href="css/owl.carousel.min.css">
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- DEFAULT AND BOOTSTRAP STYLESHEET -->
     <link rel="stylesheet" href="css/normalize.css%2bbootstrap.min.css%2bbootstrap-theme.min.css%2bicon-fonts.css%2bmagnific-popup.css%2bslider-pro.css%2bowl.carousel.css%2bowl.theme.css%2bowl.transitions.css%2bjquery.mmenu.all.css%2banimate.css"/>
 
-    <!-- <link rel="stylesheet" href="css/style2.css"> -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- star rating-->
+
     <!-- FONT ICONS -->
 <!-- <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/simple-line-icons.css" />
@@ -32,12 +36,6 @@
     <!-- PLUGINS DEFAULT STYSHEETS-->
     
     
-    
-    
-        
-    
-    
-
     <!-- <link rel="stylesheet" href="css/plugins.css"> -->
       
     
@@ -69,6 +67,12 @@
 	<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/rating.js"></script>
+<!--star rating-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/star-rating.js" type="text/javascript"></script>
 </head>
 
 <body class="do-homepage-one">
@@ -129,6 +133,11 @@
                             <a href="#">design</a>
                         </li>
                     </ul>
+                    
+                    <div class="col-md-4">
+                        <button type="button" class="btn do-btn-round-outline hidden-md hidden-sm hidden-lg" data-toggle="modal" data-target="#myModal1" style="letter-spacing: 0px;color: #000;margin-top: 20px;">Sign in</button>
+                    <button type="button" class="btn do-btn-round-outline hidden-md hidden-sm hidden-lg" data-toggle="modal" data-target="#myModal" style="letter-spacing: 0px;color: #000; margin-top: 20px;">Sign up</button>
+                    </div>
                 </div>
                 <!-- MENU END -->
 
@@ -236,8 +245,7 @@
                         <li>
                             <a href="contact_us.html">Contact</a>
                         </li>
-						<!--login-->
-
+						<!--SignUp-->
                         <div class="sign_in"><!--start of sing-up-->
                             <button type="button" class="btn do-btn-round-outline" data-toggle="modal" data-target="#myModal">Sign up</button>
                             <div class="modal fade myModal" id="myModal" role="dialog"><!--sstart of modal-->
@@ -291,7 +299,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal" style="padding-top: 7px; padding-bottom: 7px; background : transparent; border-color: #fff;color: #888;">Close</button>-->
                                 </div>
                               </div>
                             </div>
@@ -313,6 +321,12 @@
                                 </div>
                                 <div class="modal-body">
                                     <form class="form-group">
+                                        <div class="social-sign">   
+                                            <ul>
+                                                <li class="fb-sign"><a href=""><i class="fa fa-facebook"></i> Sign up with facebook</a></li>
+                                                <li class="google-sign" style="margin-bottom: 15px;"><a href=""><i class="fa fa-google"></i> Sign up with google</a></li>
+                                            </ul>
+                                        </div>
                                         <div class="sign-up-heading">
                                             <h4 class="text-center">Login Here</h4>
                                         </div>
@@ -333,7 +347,7 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <!--<button type="button" class="btn btn-default" data-dismiss="modal" style="padding-top: 7px; padding-bottom: 7px; background : transparent; border-color: #fff;color: #888;">Close</button>-->
                                 </div>
                               </div>
                             </div>
@@ -366,25 +380,30 @@
               <div class="item slide2"></div>
             
               <div class="item slide3"></div>
+               <div class="item slide4"></div>
             </div>
+            <div class="item slide5"></div>
+            </div>
+            <div class="item slide6"></div>
+            </div>
+            </div>
+           
         </div>
 
         <!--carousel caption-->
         <div class="sliding-overlay"></div>
             <div class="form-group col-md-6 col-sm-8 col-xs-12 absolute-form">
-                 <div class="heed">
-				    <h1>Welcome to NEST HUB </h1>
-				</div>
-				<div class="d"><p> The Home Your StartUp Deserve !! All The Coolest OFFICE For StartUp And Small business  </p>
+				<div class="d">
+                     <p class="head">welcom to Nesthub</p> <br> 
+                    <p class="head2"> The Home Your </p> <br> <br><p class="head3"> StartUp Deserves</p><br><p> All The Coolest OFFICE For StartUp And Small businesses in Egypt  </p>
 				</div>
 				<!-- second -->
+                <div class="office-choice">
 				<div class="book-header">
 				<p> I Need :</p>
-				 </div>
 				 <div class="dropdown col-md-6 fav-down">
-                    <a class="btn btn-primary dropdown-toggle" onclick="myFunction()" data-toggle="dropdown">Desk<span class="caret"></span></a>
+                    <a class="btn btn-primary dropdown-toggle" onclick="myFunction()" data-toggle="dropdown">desk<span class="caret"></span></a>
                     <div class="dropdown-menu flex-margin">
-                      
 					  <ul class="flex-drop">
                           <li><a>1</a></li>
                           <li><a>2</a></li>
@@ -410,27 +429,32 @@
                         </ul>
                     </div>
                 </div>
+                </div>
 				<!--end-->
 				<!--second-->
-                <div class="book-header">
+                <div class="book-header2">
 				 <p>Location :</p>
-				 </div>
+				
 				 <div class="dropdown col-md-6 fav-down">
+                    <div class="second_drop">
                   <div class="dropdown">
-                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Cairo  <span class="caret"></span></a>
+                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Cairo<span class="caret"></span></a>
 					
                     <ul class="dropdown-menu">
                       <li><a >Cairo</a></li>
                       <li><a >Giza</a></li>
                     </ul>
                   </div>
+              </div>
                 </div>
+                 </div>
+                 </div>
 				<!-- end-->
 				<div class="our-class-search">
                     <button class="btn-search" href="#"><i class="fa fa-search"></i> Find Office</button>
 					<a  href="#" class="phone"><p>or Call 122233333</p></a>
                 </div>
-				</div>
+				
 				
                 
     </section>
@@ -443,7 +467,7 @@
             <div class="how-work">
                <h1 class="text-center do-section-heading"> How It Works</h1>
 			</div>
-			<div class="row">
+            <div class="row">
 			   <!-- Find -->
                 <div class="do-service-container" >
                     <div class="do-service-container-inner">
@@ -504,7 +528,7 @@
 	</section
     <!-- SERVICES SECTION END -->
 
-    <!--================================
+      <!--================================
         CUSTOM SECTION 
     =================================-->
     <section class="do-custom-section do-animated-img do-section"><!--strat section-->
@@ -512,64 +536,27 @@
             <div class="row"><!--start of row-->
                 <!-- SECTION HEADING -->
                 <div class="do-section-heading">
-                    <h2 class="do-section-subheading">Office Inspiration</h2>
+                    <h1 class="do-section-subheading">Office Inspiration</h1>
                 </div>
 
-                    <div >
-
-                      <!-- Nav tabs -->
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">STARTUPS</a></li>
-                        <li role="presentation" ><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Freelancer</a></li>
-                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">BIGGER BUSINESSES</a></li>
-                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">AGENCIES</a></li>
-                      </ul>
-                      <!-- Tab panes -->
-                      <div class="tab-content">
-                        
-                        <div role="tabpanel" class="tab-pane active" id="home">
-                            <div class="tab-disc">
-                                <h3>STARTUPS</h3>
-                                <p>Innovate and fuel your growth in space tailored for startups like yours. With features that go way beyond what you would get with a traditional office, expect accelerator support, a startup community and plenty of networking opportunities.</p>
-
-                            </div>
-                            <div class="col-md-12 none-padding"><!--col12-->
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed">
-                                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                    <div class="new-do-custom-section">                   
+                        <div class="tabs">
+                          <div class="tab-4">
+                            <label for="tab4-1">STARTUPS</label>
+                            <input id="tab4-1" name="tabs-two" type="radio" checked="checked">
+                            <div>
+                            <div class="main_card">
+                            <div class="card">
+                          <div class="container">
+                              <h4>STARTUPS</h4>
+                        <p> Innovate and fuel your growth in space tailored for startups like yours. With features that go way beyond what you would get with a traditional office, expect accelerator support, a startup community and plenty of networking opportunities.</p>  
+                            <!--start of first card-->
+                        <div class="office-card">
+                            <div class="card">
+                                   <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
+                                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
                                             <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
                                             <p> Old Street  <span>(9 mins walk)</span></p>
@@ -577,187 +564,30 @@
                                         <div class="space-body"><!--start of panel-body-->
                                             <ul class="flexed">
                                                 <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                                 <li><a href="">fixed desk</a></li>
                                                 <li><a href="">250$</a></li>
                                                 <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space col-ms-4-->                  
-                                </div><!--col6-->
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
-                                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>  
-
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
-                                        <div class="space-title">
-                                            <h3>Accelerator London</h3>
-                                            <p> Hoxton <span>(3 mins walk)</span></p>
-                                            <p> Old Street  <span>(9 mins walk)</span></p>
-                                        </div> 
-                                        <div class="space-body"><!--start of panel-body-->
-                                            <ul class="flexed">
-                                                <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">fixed desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                            </ul>
-                                        </div><!--end of panel-body-->
-                                        <div class="space-footer">
-                                            <p class="text-center"> <a href=""><span class="fa fa-heart">Shortlist</span></a></p>
-                                        </div>
-                                    </div>  <!--end of work-space col-ms-4-->                    
-                                </div><!--end of col-->
-
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
-                                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No1.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>  
-
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
-                                        <div class="space-title">
-                                            <h3>Accelerator London</h3>
-                                            <p> Hoxton <span>(3 mins walk)</span></p>
-                                            <p> Old Street  <span>(9 mins walk)</span></p>
-                                        </div> 
-                                        <div class="space-body"><!--start of panel-body-->
-                                            <ul class="flexed">
-                                                <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">fixed desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                            </ul>
-                                        </div><!--end of panel-body-->
-                                        <div class="space-footer">
-                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
-                                        </div>
-                                    </div>  <!--end of work-space col-ms-4-->                    
-                                </div><!--end of col-->  
-                            </div><!--end col12--> 
-
-                        </div>
-						<!-- second tab-->
-                        <div role="tabpanel" class="tab-pane" id="profile">
-                            <div class="tab-disc">
-                                <h3>Freelancer </h3>
-                                <p>Do your best work in a creative office space surrounded by inspiring people. We know you need something that suits your personal brand as well as your budget. Here are some fantastic spaces created with freelancers like you in mind.</p>
-
-                            </div>
-                            <div class="col-md-12 none-padding"><!--col12-->
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed">
-                                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
+                                    </div>  <!--end of work-space col-ms-4--> 
                                     </div>
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
-                                        <div class="space-title">
+                                     </div>
+                                          <!--start second -->
+                                            <div class="office-card2">
+                                              <div class="card">
+                                               <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                                                              
+                                                  <div class="space-title">
+                                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
                                             <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
                                             <p> Old Street  <span>(9 mins walk)</span></p>
@@ -765,187 +595,32 @@
                                         <div class="space-body"><!--start of panel-body-->
                                             <ul class="flexed">
                                                 <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                                 <li><a href="">fixed desk</a></li>
                                                 <li><a href="">250$</a></li>
                                                 <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                            </ul>
-                                        </div><!--end of panel-body-->
-                                       <div class="space-footer">
-                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
-                                        </div>
-                                    </div>  <!--end of work-space col-ms-4-->                  
-                                </div><!--col6-->
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
-                                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>  
-
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
-                                        <div class="space-title">
-                                            <h3>Accelerator London</h3>
-                                            <p> Hoxton <span>(3 mins walk)</span></p>
-                                            <p> Old Street  <span>(9 mins walk)</span></p>
-                                        </div> 
-                                        <div class="space-body"><!--start of panel-body-->
-                                            <ul class="flexed">
-                                                <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">fixed desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                            </ul>
-                                        </div><!--end of panel-body-->
-                                        <div class="space-footer">
-                                            <p class="text-center"> <a href=""><span class="fa fa-heart">Shortlist</span></a></p>
-                                        </div>
-                                    </div>  <!--end of work-space col-ms-4-->                    
-                                </div><!--end of col-->
-
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
-                                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/x2.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>  
-
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
-                                        <div class="space-title">
-                                            <h3>Accelerator London</h3>
-                                            <p> Hoxton <span>(3 mins walk)</span></p>
-                                            <p> Old Street  <span>(9 mins walk)</span></p>
-                                        </div> 
-                                        <div class="space-body"><!--start of panel-body-->
-                                            <ul class="flexed">
-                                                <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">fixed desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space col-ms-4-->                    
-                                </div><!--end of col-->  
-                            </div><!--end col12-->
+                                    </div>  <!--end of work-space col-ms-4-->  
+      </div>
+      </div> 
+  <!--end second-->
 
-                        </div>
-						<!-- Third tab-->
-                        <div role="tabpanel" class="tab-pane" id="messages">
-                            <div class="tab-disc">
-                                <h3>BIGGER BUSINESSES </h3>
-                                <p>You're looking for an office that you and your team will thrive in. Whether you're after a private office or fixed desks, welcome to the most exciting selection of space London has to offer. These are some of our favourites right now.</p>
-
-                            </div>
-                            <div class="col-md-12 none-padding"><!--col12-->
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed">
-                                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+  <!--start third-->
+   <div class="office-card3">
+<div class="card">
+  
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
+                                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
                                             <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
                                             <p> Old Street  <span>(9 mins walk)</span></p>
@@ -953,186 +628,44 @@
                                         <div class="space-body"><!--start of panel-body-->
                                             <ul class="flexed">
                                                 <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                                 <li><a href="">fixed desk</a></li>
                                                 <li><a href="">250$</a></li>
                                                 <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                            </ul>
-                                        </div><!--end of panel-body-->
-                                       <div class="space-footer">
-                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
-                                        </div>
-                                    </div>  <!--end of work-space col-ms-4-->                  
-                                </div><!--col6-->
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
-                                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>  
-
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
-                                        <div class="space-title">
-                                            <h3>Accelerator London</h3>
-                                            <p> Hoxton <span>(3 mins walk)</span></p>
-                                            <p> Old Street  <span>(9 mins walk)</span></p>
-                                        </div> 
-                                        <div class="space-body"><!--start of panel-body-->
-                                            <ul class="flexed">
-                                                <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">fixed desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                            </ul>
-                                        </div><!--end of panel-body-->
-                                        <div class="space-footer">
-                                            <p class="text-center"> <a href=""><span class="fa fa-heart">Shortlist</span></a></p>
-                                        </div>
-                                    </div>  <!--end of work-space col-ms-4-->                    
-                                </div><!--end of col-->
-
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
-                                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No2.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>  
-
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
-                                        <div class="space-title">
-                                            <h3>Accelerator London</h3>
-                                            <p> Hoxton <span>(3 mins walk)</span></p>
-                                            <p> Old Street  <span>(9 mins walk)</span></p>
-                                        </div> 
-                                        <div class="space-body"><!--start of panel-body-->
-                                            <ul class="flexed">
-                                                <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">fixed desk</a></li>
-                                                <li><a href="">250$</a></li>
-                                                <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space col-ms-4-->                    
-                                </div><!--end of col-->  
-                            </div><!--end col12-->
-                        </div>
-						<!-- fourth tab-->
-                        <div role="tabpanel" class="tab-pane" id="settings">
-                            <div class="tab-disc">
-                                <h3>AGENCIES</h3>
-                                <p>Amaze your clients with an office space that reflects your image, in the right location, with the right neighbours. You'll fall in love with these creative spaces, hand picked for businesses like yours.</p>
-
-                            </div>
-                            <div class="col-md-12 none-padding"><!--col12-->
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed">
-                                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No3.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No3.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No3.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                    </div>  <!--end of work-space col-ms-4-->  
+      </div>
+      </div> 
+      <!-- end third-->   
+ </div>
+  </div>
+  </div>
+  </div>
+  </div>
+   <div class="tab-4">
+    <label for="tab4-2">Freelancer</label>
+    <input id="tab4-2" name="tabs-two" type="radio" checked="checked">
+    <div>
+        <div class="main_card">
+    <div class="card">
+  <div class="container">
+      <h4>Freelancer</h4>
+       <p>Do your best work in a creative office space surrounded by inspiring people. We know you need something that suits your personal brand as well as your budget. Here are some fantastic spaces created with freelancers like you in mind.</p>
+       <!--start of first card-->
+      <div class="office-card">
+<div class="card">
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
+                                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
                                             <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
                                             <p> Old Street  <span>(9 mins walk)</span></p>
@@ -1140,145 +673,316 @@
                                         <div class="space-body"><!--start of panel-body-->
                                             <ul class="flexed">
                                                 <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                                 <li><a href="">fixed desk</a></li>
                                                 <li><a href="">250$</a></li>
                                                 <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
                                         <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                    </div>  <!--end of work-space col-ms-4-->                  
-                                </div><!--col6-->
-                                <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
-                                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No3.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No3.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No3.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>  
-
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                    </div>  <!--end of work-space col-ms-4--> 
+  </div>
+  </div>
+  <!--start second -->
+    <div class="office-card2">
+<div class="card">
+  
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
-                                            <h3>Accelerator London</h3>
+                                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
+                                            <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
                                             <p> Old Street  <span>(9 mins walk)</span></p>
                                         </div> 
                                         <div class="space-body"><!--start of panel-body-->
                                             <ul class="flexed">
                                                 <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                                 <li><a href="">fixed desk</a></li>
                                                 <li><a href="">250$</a></li>
                                                 <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
                                         <div class="space-footer">
-                                            <p class="text-center"> <a href=""><span class="fa fa-heart">Shortlist</span></a></p>
-                                        </div>  <!--end of work-space col-ms-4-->                    
-                                </div><!--end of col-->
-
-                                 
-                            </div><!--end col12-->
-                            <div class="col-md-4 col-ms-6 col-xs-12 boxed"><!--start of col-->
-                                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-                                      <!-- Indicators -->
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                      </ol>
-
-                                      <!-- Wrapper for slides -->
-                                      <div class="carousel-inner">
-                                        <div class="item active">
-                                          <img src="images/No3.jpg" alt="">
+                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
+                                    </div>  <!--end of work-space col-ms-4-->  
+      </div>
+      </div> 
+  <!--end second-->
 
-                                        <div class="item">
-                                          <img src="images/No3.jpg" alt="">
-                                        </div>
-
-                                        <div class="item">
-                                          <img src="images/No3.jpg" alt="">
-                                        </div>
-                                      </div>
-
-                                      <!-- Left and right controls-->
-                                      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-                                        <span class="fa fa-angle-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                      </a>
-                                      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-                                        <span class="fa fa-angle-right"></span>
-                                        <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>  
-
-                                    <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+  <!--start third-->
+   <div class="office-card3">
+<div class="card">
+  
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
                                         <div class="space-title">
-                                            <h3>Accelerator London</h3>
+                                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
+                                            <h3>Edspace</h3>
                                             <p> Hoxton <span>(3 mins walk)</span></p>
                                             <p> Old Street  <span>(9 mins walk)</span></p>
                                         </div> 
                                         <div class="space-body"><!--start of panel-body-->
                                             <ul class="flexed">
                                                 <li><a href="">Hot desk</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                                 <li><a href="">fixed desk</a></li>
                                                 <li><a href="">250$</a></li>
                                                 <li><a href="">Per month</a></li>
-                                                <li><a href="">Private Office</a></li>
-                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
-                                       <div class="space-footer">
+                                        <div class="space-footer">
                                             <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
                                         </div>
-                                </div>  <!--end of work-space col-ms-4-->                    
-                            </div><!--end of col4--> 
+                                    </div>  <!--end of work-space col-ms-4-->  
+      </div>
+      </div> 
+      <!-- end third-->  
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+   <div class="tab-4">
+    <label for="tab4-3">BUSINESSES</label>
+    <input id="tab4-3" name="tabs-two" type="radio" checked="checked">
+    <div>
+    <div class="main_card">
+    <div class="card">
+  <div class="container">
+      <h4>   BIGGER BUSINESSES</h4>
+      <p>  You're looking for an office that you and your team will thrive in. Whether you're after a private office or fixed desks, welcome to the most exciting selection of space London has to offer. These are some of our favourites right now.</p>
+<!--start of first card-->
+      <div class="office-card">
+<div class="card">
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
 
-                        </div>
-                    </div>
+                                            <h3>Edspace</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div> 
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                            </ul>
+                                        </div><!--end of panel-body-->
+                                        <div class="space-footer">
+                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
+                                        </div>
+                                    </div>  <!--end of work-space col-ms-4--> 
+  </div>
+  </div>
+  <!--start second -->
+    <div class="office-card2">
+<div class="card">
+  
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
 
+                                            <h3>Edspace</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div> 
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                            </ul>
+                                        </div><!--end of panel-body-->
+                                        <div class="space-footer">
+                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
+                                        </div>
+                                    </div>  <!--end of work-space col-ms-4-->  
+      </div>
+      </div> 
+  <!--end second-->
+
+  <!--start third-->
+   <div class="office-card3">
+<div class="card">
+  
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
+                                            <h3>Edspace</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div> 
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                            </ul>
+                                        </div><!--end of panel-body-->
+                                        <div class="space-footer">
+                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
+                                        </div>
+                                    </div>  <!--end of work-space col-ms-4-->  
+      </div>
+      </div> 
+      <!-- end third-->  
+      </div>
+
+</div>
+</div>
+</div>
+</div>
+  
+   
+  <div class="tab-4">
+    <label for="tab4-4">AGENCIES</label>
+    <input id="tab4-4" name="tabs-two" type="radio">
+    <div>
+        <div class="main_card">
+
+    <div class="card">
+  <div class="container">
+      <h4>AGENCIES</h4>
+      <p>Amaze your clients with an office space that reflects your image, in the right location, with the right neighbours. You'll fall in love with these creative spaces, hand picked for businesses like yours.</p>
+      <!--start of first card-->
+      <div class="office-card">
+<div class="card">
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
+                                            <h3>Edspace</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div> 
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                            </ul>
+                                        </div><!--end of panel-body-->
+                                        <div class="space-footer">
+                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
+                                        </div>
+                                    </div>  <!--end of work-space col-ms-4--> 
+  </div>
+  </div>
+  <!--start second -->
+    <div class="office-card2">
+<div class="card">
+  
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                                                                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+
+                                            <h3>Edspace</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div> 
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                            </ul>
+                                        </div><!--end of panel-body-->
+                                        <div class="space-footer">
+                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
+                                        </div>
+                                    </div>  <!--end of work-space col-ms-4-->  
+      </div>
+      </div> 
+  <!--end second-->
+
+  <!--start third-->
+   <div class="office-card3">
+<div class="card">
+
+       <div class="work-space col-ms-4"><!--stat of work-space col-ms-4-->
+                                        <div class="space-title">
+                                                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg" >
+                                            <h3>Edspace</h3>
+                                            <p> Hoxton <span>(3 mins walk)</span></p>
+                                            <p> Old Street  <span>(9 mins walk)</span></p>
+                                        </div> 
+                                        <div class="space-body"><!--start of panel-body-->
+                                            <ul class="flexed">
+                                                <li><a href="">Hot desk</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">fixed desk</a></li>
+                                                <li><a href="">250$</a></li>
+                                                <li><a href="">Per month</a></li>
+                                                <li><a href="">Office</a></li>
+                                                <li><a href="">&nbsp;</a></li>
+                                                <li><a href="">Per month</a></li>
+                                            </ul>
+                                        </div><!--end of panel-body-->
+                                        <div class="space-footer">
+                                            <p class="text-center"><a href=""><span class="fa fa-heart">Shortlist</span></a></p>
+                                        </div>
+                                    </div>  <!--end of work-space col-ms-4-->  
+      </div>
+      </div> 
+      <!-- end third-->  
+    </div>
+    </div>
+  </div>
+</div>
+  </div>
+  </div>
+  </div>
                 </div>
             </div><!--end of row-->
         </div><!--end of container-->
@@ -1413,30 +1117,10 @@
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
-										 <h4>Rating</h4>
-							   <div class="star-rating">
-							  
-									<input id="star-5" type="radio" name="rating" value="star-5">
-									<label for="star-5" title="5 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-4" type="radio" name="rating" value="star-4">
-									<label for="star-4" title="4 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-3" type="radio" name="rating" value="star-3">
-									<label for="star-3" title="3 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-2" type="radio" name="rating" value="star-2">
-									<label for="star-2" title="2 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-1" type="radio" name="rating" value="star-1">
-									<label for="star-1" title="1 star">
-									<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-		                    </div>
+                                        <hr>
+							  <form>
+                                <input id="kartik" class="rating" data-stars="5" data-step="0.1" title=""/>
+                            </form>
 						    </div>
 
                               <!--end of work-space col-ms-4-->  
@@ -1475,29 +1159,10 @@
                                                 <li><a href="">Per month</a></li>
                                             </ul>
                                         </div><!--end of panel-body-->
-										<h4>Rating</h4>
-                                        <div class="star-rating">
-									<input id="star-5" type="radio" name="rating" value="star-5">
-									<label for="star-5" title="5 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-4" type="radio" name="rating" value="star-4">
-									<label for="star-4" title="4 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-3" type="radio" name="rating" value="star-3">
-									<label for="star-3" title="3 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-2" type="radio" name="rating" value="star-2">
-									<label for="star-2" title="2 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-1" type="radio" name="rating" value="star-1">
-									<label for="star-1" title="1 star">
-									<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-		                    </div>
+                                      <hr>
+                                      <form>
+                                            <input id="kartik" class="rating" data-stars="5" data-step="0.1" title=""/>
+                                        </form>
                                     </div>  <!--end of work-space col-ms-4-->         
 								
                             </div>
@@ -1532,31 +1197,11 @@
                                                 <li><a href="">Per month</a></li>
                                          	 </ul>
 											</div><!--end of panel-body-->
-
-										 <h4>Rating</h4>
-                                       <div class="star-rating">
-									<input id="star-5" type="radio" name="rating" value="star-5">
-									<label for="star-5" title="5 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-4" type="radio" name="rating" value="star-4">
-									<label for="star-4" title="4 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-3" type="radio" name="rating" value="star-3">
-									<label for="star-3" title="3 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-2" type="radio" name="rating" value="star-2">
-									<label for="star-2" title="2 stars">
-											<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-									<input id="star-1" type="radio" name="rating" value="star-1">
-									<label for="star-1" title="1 star">
-									<i class="active fa fa-star" aria-hidden="true"></i>
-									</label>
-		                    </div>
-
+                                       <hr>
+                                       <form>
+                                            <input id="kartik" class="rating" data-stars="5" data-step="0.1" title=""/>
+                                        </form>
+                                      <hr>
                                     </div>  <!--end of work-space col-ms-4-->        
 								
 								 
